@@ -1,33 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Nordin Technology</title>
 
 <style>
-body{
-    font-family: Arial;
+*{
     margin:0;
     padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.6;
+    color:#333;
 }
 
 header{
-    background:#004080;
+    background:linear-gradient(135deg,#004080,#0099ff);
     color:white;
+    padding:80px 20px;
     text-align:center;
-    padding:40px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    margin-top:15px;
+    font-size:1.2rem;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:#fff;
+    color:#004080;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
 }
 
 section{
-    padding:30px;
+    max-width:1200px;
+    margin:auto;
+    padding:60px 20px;
 }
 
-.service{
-    background:#f4f4f4;
-    margin:10px;
-    padding:15px;
-    border-radius:8px;
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#004080;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#f5f5f5;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0px 2px 10px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#004080;
+}
+
+.about{
+    text-align:center;
+}
+
+.contact{
+    text-align:center;
 }
 
 footer{
@@ -42,54 +96,76 @@ footer{
 <body>
 
 <header>
-<h1>Nordin Technology</h1>
-<p>Innovative Software, Automation & Electronics Solutions</p>
+    <h1>Nordin Technology</h1>
+    <p>Innovative Software, Automation & Electronics Solutions</p>
+
+    #contact
+        Contact Us
+    </a>
 </header>
 
-<section>
-<h2>About Us</h2>
-<p>
-Nordin Technology delivers professional software development,
-automation solutions, electronics design and digital transformation services.
-</p>
+<section class="about">
+    <h2>About Us</h2>
+
+    <p>
+        Nordin Technology provides professional software development,
+        automation engineering, electronics hardware design and digital
+        transformation services for industrial and commercial customers.
+    </p>
 </section>
 
 <section>
-<h2>Our Services</h2>
 
-<div class="service">
-<h3>Web Development</h3>
-</div>
+    <h2>Our Services</h2>
 
-<div class="service">
-<h3>Mobile Application Development</h3>
-</div>
+    <div class="services">
 
-<div class="service">
-<h3>Industrial Automation</h3>
-</div>
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>Custom websites and enterprise web applications.</p>
+        </div>
 
-<div class="service">
-<h3>LabVIEW Test Automation</h3>
-</div>
+        <div class="card">
+            <h3>Mobile Applications</h3>
+            <p>Android and iOS application development.</p>
+        </div>
 
-<div class="service">
-<h3>Electronics Hardware Design</h3>
-</div>
+        <div class="card">
+            <h3>Industrial Automation</h3>
+            <p>PLC, SCADA and industrial automation solutions.</p>
+        </div>
 
-<div class="service">
-<h3>SEO & Digital Marketing</h3>
-</div>
+        <div class="card">
+            <h3>LabVIEW Solutions</h3>
+            <p>Test systems and automated measurement solutions.</p>
+        </div>
+
+        <div class="card">
+            <h3>Electronics Design</h3>
+            <p>PCB design, embedded systems and product development.</p>
+        </div>
+
+        <div class="card">
+            <h3>SEO & Digital Marketing</h3>
+            <p>Search optimization and online business growth.</p>
+        </div>
+
+    </div>
 
 </section>
 
-<section>
-<h2>Contact</h2>
-<p>Email: info@nordintechnology.com</p>
+<section id="contact" class="contact">
+
+    <h2>Contact</h2>
+
+    <p>Email: info@nordintechnology.com</p>
+
+    <p>Location: Sweden</p>
+
 </section>
 
 <footer>
-© 2026 Nordin Technology
+    © 2026 Nordin Technology. All Rights Reserved.
 </footer>
 
 </body>
